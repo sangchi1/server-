@@ -10,6 +10,7 @@ var spMoi = require('./routes/spmoi.router');
 var LapTop = require('./routes/laptop.router');
 var DienThoai = require('./routes/dienthoai.router');
 var User = require('./routes/users.router');
+var Cart = require('./routes/cart.router');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/spmoi',spMoi);
 app.use('/lt',LapTop);
 app.use('/dt',DienThoai);
 app.use('/user',User);
+app.use('/cart',Cart);
 
 
 // catch 404 and forward to error handler
